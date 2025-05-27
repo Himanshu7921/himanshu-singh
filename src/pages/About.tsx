@@ -17,11 +17,11 @@ const About = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          <div>
+          <div className="flex justify-center">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop&crop=face"
+              src="https://i.ibb.co/Kkb89Jt/image.jpg"
               alt="Himanshu Singh"
-              className="w-full max-w-md mx-auto rounded-lg shadow-lg"
+              className="w-80 h-80 object-cover rounded-full shadow-lg border-4 border-gray-100"
             />
           </div>
           
