@@ -39,9 +39,9 @@ const Index = () => {
             <div className="lg:w-1/2 lg:pl-12">
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                  src="https://i.ibb.co/Kkb89Jt/your-image.jpg"
                   alt="Himanshu Singh"
-                  className="w-80 h-80 rounded-full mx-auto shadow-2xl border-8 border-white"
+                  className="w-80 h-80 rounded-full mx-auto shadow-2xl border-8 border-white object-cover"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-blue-600 text-white p-4 rounded-full shadow-lg">
                   <Brain className="h-8 w-8" />
