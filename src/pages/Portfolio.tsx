@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -12,7 +11,9 @@ const Portfolio = () => {
       technologies: ["Python", "NumPy", "Neural Networks", "Deep Learning"],
       purpose: "Educational framework showcasing understanding of neural network fundamentals",
       image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=250&fit=crop",
-      category: "Deep Learning"
+      category: "Deep Learning",
+      githubLink: "https://github.com/Himanshu7921/SparksNet",
+      liveDemoLink: "https://github.com/Himanshu7921/SparksNet" // Using same GitHub repo as live demo
     },
     {
       title: "Spam Email Classification",
@@ -20,7 +21,9 @@ const Portfolio = () => {
       technologies: ["PyTorch", "NLP", "Tokenization", "Stemming", "Python"],
       purpose: "Text classification using deep learning for email spam detection",
       image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=400&h=250&fit=crop",
-      category: "Natural Language Processing"
+      category: "Natural Language Processing",
+      githubLink: "https://github.com/Himanshu7921/Projects/tree/main/Email%20Spam%20Checking",
+      liveDemoLink: "https://github.com/Himanshu7921/Projects/tree/main/Email%20Spam%20Checking"
     },
     {
       title: "Iris Classification (KNN)",
@@ -28,7 +31,9 @@ const Portfolio = () => {
       technologies: ["Python", "scikit-learn", "KNN", "Data Visualization", "Pandas"],
       purpose: "Fundamental ML classification demonstrating algorithm implementation",
       image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=250&fit=crop",
-      category: "Machine Learning"
+      category: "Machine Learning",
+      githubLink: "https://github.com/Himanshu7921/Projects/tree/main/Iris%20Flower%20Classification",
+      liveDemoLink: "https://github.com/Himanshu7921/Projects/tree/main/Iris%20Flower%20Classification"
     },
     {
       title: "Wine Quality Analysis",
@@ -36,7 +41,9 @@ const Portfolio = () => {
       technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "scikit-learn"],
       purpose: "Data analysis and modeling for wine quality prediction",
       image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=400&h=250&fit=crop",
-      category: "Data Science"
+      category: "Data Science",
+      githubLink: "https://github.com/Himanshu7921/Projects/tree/main/Wine%20Quality%20Prediction%20System",
+      liveDemoLink: "https://github.com/Himanshu7921/Projects/tree/main/Wine%20Quality%20Prediction%20System"
     }
   ];
 
@@ -95,11 +102,26 @@ const Portfolio = () => {
                   </div>
                   
                   <div className="flex gap-2 pt-4">
-                    <Button size="sm" className="flex-1">
+                    <Button
+                      size="sm"
+                      as="a"
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1"
+                    >
                       <Github className="h-4 w-4 mr-2" />
                       View Code
                     </Button>
-                    <Button size="sm" variant="outline" className="flex-1">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      as="a"
+                      href={project.liveDemoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1"
+                    >
                       <ExternalLink className="h-4 w-4 mr-2" />
                       Live Demo
                     </Button>
