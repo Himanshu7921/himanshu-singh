@@ -13,7 +13,7 @@ const Portfolio = () => {
       image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=250&fit=crop",
       category: "Deep Learning",
       githubLink: "https://github.com/Himanshu7921/SparksNet",
-      liveDemoLink: "https://github.com/Himanshu7921/SparksNet" // Using same GitHub repo as live demo
+      liveDemoLink: "https://github.com/Himanshu7921/SparksNet"
     },
     {
       title: "Spam Email Classification",
@@ -104,26 +104,32 @@ const Portfolio = () => {
                   <div className="flex gap-2 pt-4">
                     <Button
                       size="sm"
-                      as="a"
-                      href={project.githubLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      asChild
                       className="flex-1"
                     >
-                      <Github className="h-4 w-4 mr-2" />
-                      View Code
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github className="h-4 w-4 mr-2" />
+                        View Code
+                      </a>
                     </Button>
                     <Button
                       size="sm"
                       variant="outline"
-                      as="a"
-                      href={project.liveDemoLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      asChild
                       className="flex-1"
                     >
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live Demo
+                      <a
+                        href={project.liveDemoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Live Demo
+                      </a>
                     </Button>
                   </div>
                 </div>
