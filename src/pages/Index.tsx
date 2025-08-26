@@ -18,8 +18,14 @@ const Index = () => {
               <p className="text-xl text-gray-600 mb-4">
                 2nd Year B.Tech CSE-AIML Student
               </p>
-              <p className="text-lg text-gray-600 mb-8">
-                Aspiring Machine Learning & AI Developer passionate about building intelligent systems and solving real-world problems through code.
+              <p className="text-lg text-gray-600 mb-4">
+                Aspiring Machine Learning & AI Researcher/Developer passionate about building intelligent systems and solving real-world problems through code.
+              </p>
+              <p className="text-sm text-gray-500 mb-8">
+                I keep track of all my implemented and published research papers on this website → 
+                <a href="https://research-implementation-tracker.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                  https://research-implementation-tracker.onrender.com/
+                </a>
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="group">
@@ -27,6 +33,12 @@ const Index = () => {
                     View My Work
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
+                </Button>
+                <Button asChild size="lg" className="group">
+                  <a href="https://research-implementation-tracker.onrender.com/" target="_blank" rel="noopener noreferrer">
+                    View Implemented Research Papers
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
                 </Button>
                 <Button asChild variant="outline" size="lg">
                   <Link to="/contact">
